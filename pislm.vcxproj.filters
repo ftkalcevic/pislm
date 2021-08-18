@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{22ef8692-1143-4a7e-b3df-bf3ed664ae6e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{b4b12805-b7a9-4678-9292-d147ae575789}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{6f9abd30-558d-491d-904c-348fdb42c5be}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="CMake files">
+      <UniqueIdentifier>{b48e8792-17bc-40b9-8e9c-0156fdbc91fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{49212855-a9ad-47ba-9733-dcca246a63e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pislm.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="MainWindow.ui">
+      <Filter>Source files</Filter>
+    </None>
+    <None Include="CMakeLists.txt">
+      <Filter>Source files</Filter>
+    </None>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <None Include="toolchain-Debug.cmake">
+      <Filter>CMake files</Filter>
+    </None>
+    <None Include="toolchain-Release.cmake">
+      <Filter>CMake files</Filter>
+    </None>
+    <None Include="pislm-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="pislm-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="CAudio.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAudioBuffer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAudio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAudioBuffer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
