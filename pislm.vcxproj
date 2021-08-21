@@ -45,7 +45,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8\backward;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include-fixed;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include;Debug\pislm_autogen\include;$(ToolchainDir)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5;$(ToolchainDir)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtCore;$(ToolchainDir)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtWidgets;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtCore;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtWidgets;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\local\include;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8\backward;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include-fixed;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include;Debug/pislm_autogen/include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
@@ -57,9 +57,8 @@
     <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <NMakeIncludeSearchPath>c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\8;c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\8\backward;c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\8\include;c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\8\include-fixed;c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include;c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8;c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtCore;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtWidgets;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8\backward;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include;$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include-fixed;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include;Debug/pislm_autogen/include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
-    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
@@ -67,6 +66,7 @@
     <IncludePath />
     <ReferencePath />
     <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
@@ -78,12 +78,16 @@
   <ItemGroup>
     <ClCompile Include="CAudio.cpp" />
     <ClCompile Include="CAudioBuffer.cpp" />
+    <ClCompile Include="CFFTDisplay.cpp" />
+    <ClCompile Include="CWaveDisplay.cpp" />
     <ClCompile Include="pislm.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <None Include="MainWindow.ui" />
     <None Include="CMakeLists.txt" />
     <ClInclude Include="CAudio.h" />
     <ClInclude Include="CAudioBuffer.h" />
+    <ClInclude Include="CFFTDisplay.h" />
+    <ClInclude Include="CWaveDisplay.h" />
     <ClInclude Include="MainWindow.h" />
     <None Include="toolchain-Debug.cmake" />
     <None Include="toolchain-Release.cmake" />

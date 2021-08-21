@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(&m_audio, SIGNAL(BufferUpdate(unsigned char*, int)), this, SLOT(BufferUpdate(unsigned char*, int)));
+	m_audio.init();
 }
 
 MainWindow::~MainWindow()
@@ -14,17 +16,29 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::btnStopClicked()
+{
+    m_audio.stop();
+}
+
 void MainWindow::ButtonClicked()
 {
-	m_audio.init();
 	QMessageBox msgBox(this);
     msgBox.setText("Hello, World!");
     msgBox.setWindowTitle("VisualGDB Qt Demo");
     msgBox.exec();
 }
 
-bool MainWindow::event(QEvent *event)
+//bool MainWindow::event(QEvent *event)
+//{
+//	fprintf(stderr, "Event %d\n", event->type());
+//	return QMainWindow::event(event);
+//}
+
+
+void MainWindow::BufferUpdate(unsigned char* buff, int len)
 {
-	fprintf(stderr, "Event %d\n", event->type());
-	return QMainWindow::event(event);
+    ui->waveWidget->UpdateWave(buff, len);
+    ui->fftWidget->UpdateWave(buff, len);
 }
+

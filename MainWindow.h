@@ -18,8 +18,10 @@ public:
 		
 protected slots:
     void ButtonClicked();
+	void btnStopClicked();
+	void BufferUpdate(unsigned char* buff, int len);
 	
-	virtual bool event(QEvent *event);
+	//virtual bool event(QEvent *event);
 		
 private:
     Ui::MainWindow *ui;

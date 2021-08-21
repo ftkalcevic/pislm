@@ -54,12 +54,24 @@
     <ClCompile Include="CAudioBuffer.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="CWaveDisplay.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFFTDisplay.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAudio.h">
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="CAudioBuffer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaveDisplay.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFFTDisplay.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

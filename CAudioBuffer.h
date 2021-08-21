@@ -8,15 +8,30 @@ class CAudioBuffer :
 {
 	Q_OBJECT
 public :
-	CAudioBuffer(int buffers_count, int buffer_size)	
+	CAudioBuffer(int buffers_count)	
 		: m_buffers(buffers_count)
 	{
-		for (int i = 0; i < m_buffers.count(); i++)
-			m_buffers[i].fill(0, buffer_size);
 		m_activeBuffer = 0;
 	}
+
+	void resize(int buffer_size)
+	{
+		for (int i = 0; i < m_buffers.count(); i++)
+			m_buffers[i].resize(buffer_size);
+	}
+
+	int size()
+	{
+		return m_buffers[0].count();
+	}
 	
-	QVector<QVector<u_int32_t> > m_buffers;
+	u_char *buffer(unsigned int id)
+	{
+		Q_ASSERT(id < m_buffers.count());
+		return m_buffers[id].data();
+	}
+	
+	QVector<QVector<u_int8_t> > m_buffers;
 	int m_activeBuffer;
 };
 

@@ -27,12 +27,13 @@
       <Version>
         <GCC>8.3.0</GCC>
         <GDB>8.2.1</GDB>
-        <Revision>3</Revision>
+        <Revision>4</Revision>
       </Version>
     </ToolchainID>
     <RelativeSourceDirectory />
     <ConfigurationType>RELWITHDEBINFO</ConfigurationType>
     <BinaryDirectory>Release</BinaryDirectory>
+    <MainCMakeTarget>pislm</MainCMakeTarget>
     <MakeCommandTemplate>
       <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
       <RemoteHost>
@@ -58,7 +59,7 @@
     <DisableToolchainFile>false</DisableToolchainFile>
     <CMakeMakefileType>Ninja</CMakeMakefileType>
     <DeployAsRoot>false</DeployAsRoot>
-    <CMakeCleanMode>RemoveBuildDirectory</CMakeCleanMode>
+    <CMakeCleanMode>MakeClean</CMakeCleanMode>
     <UseCCache>false</UseCCache>
   </Build>
   <CustomBuild>
@@ -79,6 +80,7 @@
     <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
   </CustomShortcuts>
   <UserDefinedVariables />
+  <ImportedPropertySheets />
   <CodeSense>
     <Enabled>Unknown</Enabled>
     <ExtraSettings>
@@ -91,6 +93,8 @@
       <Enabled>false</Enabled>
     </CodeAnalyzerSettings>
   </CodeSense>
+  <Configurations />
+  <ProgramArgumentsSuggestions />
   <Debug xsi:type="com.visualgdb.debug.remote">
     <AdditionalStartupCommands />
     <AdditionalGDBSettings>

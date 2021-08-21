@@ -278,6 +278,9 @@
 #ifndef __SIZEOF_POINTER__
 #define __SIZEOF_POINTER__ 4
 #endif
+#ifndef NDEBUG
+#define NDEBUG 1
+#endif
 #ifndef __GCC_ATOMIC_CHAR16_T_LOCK_FREE
 #define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 1
 #endif
@@ -1375,35 +1378,38 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef NDEBUG
-#define NDEBUG 1
-#endif
-#ifndef RELEASE
-#define RELEASE 1
-#endif
 #endif
 
 // --- Include directories begin --- //
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\8
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\8\backward
-//c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\8\include
-//c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\8\include-fixed
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtCore
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtWidgets
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8\backward
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include-fixed
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\arm-linux-gnueabihf\c++\8
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include
+//=\usr\local\Qt-5.15.2
+//=\usr\local\Qt-5.15.2\QtWidgets
+//Debug\pislm_autogen\include
+//=\usr\include\arm-linux-gnueabihf\qt5
+//=\usr\include\arm-linux-gnueabihf\qt5\QtCore
+//=\usr\include\arm-linux-gnueabihf\qt5\QtWidgets
 // --- Include directories end --- //
 
 
 // --- Library directories begin --- //
-//c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\8\
-//c:\gdb\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\
-//c:\gdb\sysgcc\raspberry\lib\gcc\
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\lib\
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\lib\arm-linux-gnueabihf\
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\lib\
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\lib\arm-linux-gnueabihf\
-//c:\gdb\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\lib\
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\
+//$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\
+//$(TOOLCHAIN_ROOT)\lib\gcc\
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\lib\
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\lib\arm-linux-gnueabihf\
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\lib\
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\lib\arm-linux-gnueabihf\
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\lib\
 // --- Library directories begin --- //
 
 #pragma clang diagnostic pop

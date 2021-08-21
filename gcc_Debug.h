@@ -1378,6 +1378,10 @@
 #endif
 
 // --- Include directories begin --- //
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtCore
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf\qt5\QtWidgets
+//$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\sysroot\usr\local\include
 //$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8
 //$(TOOLCHAIN_ROOT)\arm-linux-gnueabihf\include\c++\8\backward
 //$(TOOLCHAIN_ROOT)\lib\gcc\arm-linux-gnueabihf\8\include
@@ -1389,6 +1393,10 @@
 //=\usr\local\Qt-5.15.2
 //=\usr\local\Qt-5.15.2\QtWidgets
 //Debug\pislm_autogen\include
+//=\usr\include\arm-linux-gnueabihf\qt5
+//=\usr\include\arm-linux-gnueabihf\qt5\QtCore
+//=\usr\include\arm-linux-gnueabihf\qt5\QtWidgets
+//=\usr\local\include
 // --- Include directories end --- //
 
 
